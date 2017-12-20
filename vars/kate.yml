@@ -4,9 +4,12 @@
 font:
   name: Hack
   size: 11
+terminal: openterm
 cmd:
   ssh: "{terminal} --cmd '{ssh-client} {host}'"
   shell: "{terminal} --cmd '{cmd}'"
 theme: Monokai
+dpi: 192
+
 
 # vim: set filetype=eruby.yaml :

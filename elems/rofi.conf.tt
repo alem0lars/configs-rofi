@@ -35,7 +35,9 @@
   variable "font.size", as: :font_size
   variable "cmd.ssh", as: :ssh_cmd
   variable "cmd.shell", as: :shell_cmd
+  variable "terminal", as: :terminal
   variable "theme"
+  variable "dpi"
 end -%>
 ! ─────────────────────────────────────────────────────────────────────────────┘
 
@@ -65,7 +67,7 @@ rofi.fixed-num-lines: false
 ! "Whether to load and show icons" Set from: Default
 rofi.show-icons: true
 ! "Terminal to use" Set from: Default
-rofi.terminal: openterm
+rofi.terminal: <%= local! :terminal %>
 ! "Ssh client to use" Set from: Default
 ! rofi.ssh-client: ssh
 ! "Ssh command to execute" Set from: Default
@@ -95,7 +97,7 @@ rofi.sidebar-mode: false
 ! "Row height (in chars)" Set from: Default
 ! rofi.eh:                             1
 ! "Enable auto select mode" Set from: Default
-rofi.auto-select: true
+rofi.auto-select: false
 ! "Parse hosts file for ssh mode" Set from: Default
 rofi.parse-hosts: true
 ! "Parse known_hosts file for ssh mode" Set from: Default
@@ -103,7 +105,7 @@ rofi.parse-known-hosts: true
 ! "Set the modi to combine in combi mode" Set from: Default
 ! rofi.combi-modi:                     window,run
 ! "Set the matching algorithm. (normal, regex, glob, fuzzy)" Set from: Default
-rofi.matching: fuzzy
+rofi.matching: normal
 ! "Tokenize input string" Set from: Default
 rofi.tokenize: true
 ! "Monitor id to show on" Set from: Default
@@ -123,7 +125,7 @@ rofi.tokenize: true
 ! "Fake transparency *DEPRECATED*" Set from: Default
 ! rofi.fake-transparency:              false
 ! "DPI" Set from: Default
-rofi.dpi:                            192
+rofi.dpi: <%= local! :dpi %>
 ! "Threads to use for string matching" Set from: Default
 rofi.threads: 4
 ! "Scrollbar width *DEPRECATED*" Set from: Default
