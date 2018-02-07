@@ -3,12 +3,12 @@
 
 font:
   name: Hack
-  size: 11
+  size: 10
 terminal: openterm
 cmd:
   ssh: "{terminal} --cmd '{ssh-client} {host}'"
   shell: "{terminal} --cmd '{cmd}'"
-theme: Monokai
+theme: glue_pro_blue
 dpi: 192
 
 

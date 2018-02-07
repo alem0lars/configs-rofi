@@ -43,7 +43,7 @@ end -%>
 
 
 ! "Enabled modi" Set from: Default
-! rofi.modi:                           run,ssh
+rofi.modi: run,ssh,window
 ! "Window width" Set from: Default
 rofi.width: 64
 ! "Number of lines" Set from: Default
@@ -93,7 +93,7 @@ rofi.case-sensitive: false
 ! "Cycle through the results list" Set from: Default
 rofi.cycle: true
 ! "Enable sidebar-mode" Set from: Default
-rofi.sidebar-mode: false
+rofi.sidebar-mode: true
 ! "Row height (in chars)" Set from: Default
 ! rofi.eh:                             1
 ! "Enable auto select mode" Set from: Default
@@ -103,43 +103,29 @@ rofi.parse-hosts: true
 ! "Parse known_hosts file for ssh mode" Set from: Default
 rofi.parse-known-hosts: true
 ! "Set the modi to combine in combi mode" Set from: Default
-! rofi.combi-modi:                     window,run
+rofi.combi-modi: run,drun
 ! "Set the matching algorithm. (normal, regex, glob, fuzzy)" Set from: Default
 rofi.matching: fuzzy
 ! "Tokenize input string" Set from: Default
 rofi.tokenize: true
 ! "Monitor id to show on" Set from: Default
 ! rofi.m:                              -5
-! "Margin between rows *DEPRECATED*" Set from: Default
-! rofi.line-margin:                    2
-! "Padding within rows *DEPRECATED*" Set from: Default
-! rofi.line-padding:                   1
 ! "Pre-set filter" Set from: Default
 ! rofi.filter:
-! "Separator style (none, dash, solid) *DEPRECATED*" Set from: Default
-! rofi.separator-style:                dash
-! "Hide scroll-bar *DEPRECATED*" Set from: Default
-! rofi.hide-scrollbar:                 false
 ! "Fullscreen" Set from: Default
 ! rofi.fullscreen:                     false
-! "Fake transparency *DEPRECATED*" Set from: Default
-! rofi.fake-transparency:              false
 ! "DPI" Set from: Default
 rofi.dpi: <%= local! :dpi %>
 ! "Threads to use for string matching" Set from: Default
 rofi.threads: 4
-! "Scrollbar width *DEPRECATED*" Set from: Default
-! rofi.scrollbar-width:                8
 ! "Scrolling method. (0: Page, 1: Centered)" Set from: Default
-! rofi.scroll-method:                  0
+rofi.scroll-method: 1
 ! "Background to use for fake transparency. (background or screenshot)" Set from: Default
 ! rofi.fake-background:                screenshot
-! "Window Format. w (desktop name), t (title), n (name), r (role), c (class) *DEPRECATED*" Set from: Default
-! rofi.window-format:                  {w}    {i}{c}   {t}
 ! "Click outside the window to exit" Set from: Default
-! rofi.click-to-exit:                  true
+rofi.click-to-exit: true
 ! "Indicate how it match by underlining it." Set from: Default
-! rofi.show-match:                     true
+rofi.show-match: true
 ! "New style theme file" Set from: Default
 rofi.theme: <%= local! :theme %>
 ! "Color scheme for normal row" Set from: Default
@@ -154,16 +140,16 @@ rofi.theme: <%= local! :theme %>
 ! rofi.plugin-path:                    /usr/lib64/rofi
 ! "Pidfile location" Set from: Default
 ! rofi.pid:                            /run/user/1000/rofi.pid
-! "The display name of this browser" Set from: Default
-! rofi.display-run:
-! "The display name of this browser" Set from: Default
-! rofi.display-ssh:
-! "The display name of this browser" Set from: Default
-! rofi.display-drun:
-! "The display name of this browser" Set from: Default
-! rofi.display-combi:
-! "The display name of this browser" Set from: Default
-! rofi.display-keys:
+! The display name for ssh
+rofi.display-ssh: 
+! The display name for run
+rofi.display-run: 
+! The display name for drun
+rofi.display-drun: 
+! The display name for window
+rofi.display-window: 
+! The display name for combi
+rofi.display-combi: 
 ! "Paste primary selection" Set from: Default
 ! rofi.kb-primary-paste:               Control+V,Shift+Insert
 ! "Paste clipboard" Set from: Default
