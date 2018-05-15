@@ -2,8 +2,8 @@
 
 
 font:
-  name: Hack
-  size: 8
+  name: Roboto Light
+  size: 9
 terminal: openterm
 cmd:
   ssh: "{terminal} --cmd '{ssh-client} {host}'"
