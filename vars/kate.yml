@@ -3,7 +3,7 @@
 
 font:
   name: Hack
-  size: 10
+  size: 8
 terminal: openterm
 cmd:
   ssh: "{terminal} --cmd '{ssh-client} {host}'"
