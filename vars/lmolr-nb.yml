@@ -1,0 +1,15 @@
+# => inherits: generic <= #
+
+
+font:
+  name: 'Noto Sans Mono'
+  size: 12
+terminal: openterm
+cmd:
+  ssh: "{terminal} --cmd '{ssh-client} {host}'"
+  shell: "{terminal} --cmd '{cmd}'"
+theme: glue_pro_blue
+dpi: 192
+
+
+# vim: set filetype=eruby.yaml :
