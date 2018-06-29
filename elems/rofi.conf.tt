@@ -43,7 +43,7 @@ end -%>
 
 
 ! "Enabled modi" Set from: Default
-rofi.modi: run,ssh,window
+rofi.modi: run,window,ssh
 ! "Window width" Set from: Default
 rofi.width: 64
 ! "Number of lines" Set from: Default
