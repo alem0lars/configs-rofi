@@ -1,15 +1,14 @@
-# => inherits: generic <= #
+# => inherits: generic, with-hidpi <= #
 
 
 font:
-  name: Roboto Light
+  name: Fira Sans Light
   size: 9
 terminal: openterm
 cmd:
   ssh: "{terminal} --cmd '{ssh-client} {host}'"
   shell: "{terminal} --cmd '{cmd}'"
 theme: glue_pro_blue
-dpi: 192
 
 
 # vim: set filetype=eruby.yaml :
