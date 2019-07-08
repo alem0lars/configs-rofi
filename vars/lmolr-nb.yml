@@ -1,15 +1,12 @@
-# => inherits: generic, with-hidpi <= #
-
+# => inherits: generic, with-lodpi <= #
 
 font:
-  name: 'Noto Sans Mono'
+  name: 'Noto Sans'
   size: 12
 terminal: openterm
 cmd:
   ssh: "{terminal} --cmd '{ssh-client} {host}'"
   shell: "{terminal} --cmd '{cmd}'"
 theme: glue_pro_blue
-dpi: 192
-
 
 # vim: set filetype=eruby.yaml :
